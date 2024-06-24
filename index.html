@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(2, 2, 44);
+            padding: 50px;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 50px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.271);
+            margin: 0 auto;
+            border-radius: 8px;
+
+        }
+        #inputData{
+            width: calc(100% - 100px);
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+        }
+        #getData{
+           font-size: 12px;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+           background-color: aliceblue;
+           transition: all .5s;
+        }
+        #getData:hover{
+            background-color: aquamarine;
+        }
+        .Output_data h2 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 35px;
+            margin-top: 60px;
+        }
+        #data{
+            color: #fff;
+          font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="namta">
+            <form action="#">
+                <input type="number" id="inputData" placeholder="Number">
+                <button id="getData" onclick="return( getValue())">Start</button>
+            </form>
+
+           <div class="Output_data" id="namtaOutput">
+            <h2>Output : </h2>
+            <div id="data">
+
+            </div>
+           </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
